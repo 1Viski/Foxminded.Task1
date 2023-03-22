@@ -2,7 +2,7 @@
 
 namespace Anagram;
 
-public class Anagram
+public class Anagramer
 {
     private const string LatinAlphabet = "abcdefghijklmnopqrstuvwxyz";
     
