@@ -5,10 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram", "Anagram.csproj", "{76D43BCB-C925-4D80-BCE0-39957E335740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.Test", "Anagram.Test\Anagram.Test.csproj", "{8AAE0D01-28F6-48FF-967A-2BFB0BA539B4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{76D43BCB-C925-4D80-BCE0-39957E335740} = {76D43BCB-C925-4D80-BCE0-39957E335740}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.Tests", "Anagram.Tests\Anagram.Tests.csproj", "{430DA41E-9172-4E04-9449-A354F129A5FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +20,9 @@ Global
 		{76D43BCB-C925-4D80-BCE0-39957E335740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76D43BCB-C925-4D80-BCE0-39957E335740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76D43BCB-C925-4D80-BCE0-39957E335740}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AAE0D01-28F6-48FF-967A-2BFB0BA539B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AAE0D01-28F6-48FF-967A-2BFB0BA539B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AAE0D01-28F6-48FF-967A-2BFB0BA539B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AAE0D01-28F6-48FF-967A-2BFB0BA539B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430DA41E-9172-4E04-9449-A354F129A5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430DA41E-9172-4E04-9449-A354F129A5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430DA41E-9172-4E04-9449-A354F129A5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430DA41E-9172-4E04-9449-A354F129A5FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

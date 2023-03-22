@@ -13,13 +13,4 @@
       <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Update="Anagram.Test\AnagramerTest.cs">
-        <Link>TestProject1\AnagramerTest.cs</Link>
-      </Compile>
-      <Compile Update="Anagram.Test\Usings.cs">
-        <Link>TestProject1\Usings.cs</Link>
-      </Compile>
-    </ItemGroup>
-
 </Project>
