@@ -74,6 +74,11 @@ public class AnagramerTests
         
         Assert.AreEqual(expected, actual);
     }
-    
-    
+
+    [TestMethod]
+    [ExpectedException(typeof(NullReferenceException))]
+    public void ReverseTestNull()
+    {
+        Anagramer.Reverse(null!);
+    }
 }
