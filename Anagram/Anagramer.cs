@@ -4,7 +4,7 @@ namespace Anagram;
 
 public static class Anagramer
 {
-    public static string? Reverse(string? line)
+    public static string Reverse(string? line)
     {
         if (line is null)
         {
