@@ -4,8 +4,12 @@ namespace Anagram;
 
 public static class Anagramer
 {
-    public static string Reverse(string line)
+    public static string? Reverse(string? line)
     {
+        if (line is null)
+        {
+            throw new NullForReverseException("Method don't work with NULL please use string");
+        }
         var result = new StringBuilder();
         var word = new StringBuilder();
         

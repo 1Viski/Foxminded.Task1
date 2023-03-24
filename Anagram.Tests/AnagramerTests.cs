@@ -88,7 +88,7 @@ public class AnagramerTests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(NullReferenceException))]
+    [ExpectedException(typeof(NullForReverseException))]
     public void ReverseTestNull()
     {
         Anagramer.Reverse(null!);
