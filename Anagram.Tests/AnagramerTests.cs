@@ -93,4 +93,16 @@ public class AnagramerTests
     {
         Anagramer.Reverse(null!);
     }
+
+    [TestMethod]
+    public void ReverseTestHalf()
+    {
+        var line = "12345!@#$%qwertyuiop qwertyuiop12345!@#$%";
+
+        var expected = "12345!@#$%poiuytrewq poiuytrewq12345!@#$%";
+
+        var actual = Anagramer.Reverse(line);
+        
+        Assert.AreEqual(expected, actual);
+    }
 }
