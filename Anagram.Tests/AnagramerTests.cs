@@ -62,6 +62,18 @@ public class AnagramerTests
         
         Assert.AreEqual(expected, actual);
     }
+    
+    [TestMethod]
+    public void ReverseTestHalfWordSymbols()
+    {
+        var line = "asdfg1234@";
+
+        var expected = "gfdsa1234@";
+
+        var actual = Anagramer.Reverse(line);
+        
+        Assert.AreEqual(expected, actual);
+    }
 
     [TestMethod]
     public void ReverseTestTrim()

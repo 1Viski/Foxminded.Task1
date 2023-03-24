@@ -2,52 +2,57 @@
 
 namespace Anagram;
 
-public class Anagramer
+public static class Anagramer
 {
-    private const string LatinAlphabet = "abcdefghijklmnopqrstuvwxyz";
-    
     public static string Reverse(string line)
     {
-        var result = string.Empty;
-        var word = string.Empty;
+        var result = new StringBuilder();
+        var word = new StringBuilder();
         
         for (var i = 0; i < line.Length; i++)
         {
             if (line[i] != ' ')
             {
-                word += line[i];
+                word.Append(line[i]);
                 if (i == line.Length - 1)
                 {
-                    result += ReverseWord(word);
-                    return result;
+                    result.Append(ReverseWord(word.ToString()));
+                    return result.ToString();
                 }
             }
             else
             {
-                result += ReverseWord(word) + " ";
-                word = string.Empty;
+                result.Append(ReverseWord(word.ToString()) + " ");
+                word.Clear();
             }
         }
 
-        return result;
+        return result.ToString();
     }
 
     private static string ReverseWord(string word)
     {
         var result = new StringBuilder();
-
-        for (var i = word.Length - 1; i >= 0; i--)
-        {
-            if (LatinAlphabet.Contains(word[i].ToString().ToLower()))
-                result.Append(word[i]);
-        }
-
+        var index = word.Length - 1;
+    
         for (var i = 0; i < word.Length; i++)
         {
-            if (!LatinAlphabet.Contains(word[i].ToString().ToLower()))
-                result.Insert(i, word[i]);
-        }
+            if (char.IsLetter(word[i]))
+            {
+                while (!char.IsLetter(word[index]))
+                {
+                    index--;
+                }
 
+                result.Append(word[index]);
+                index--;
+            }
+            else
+            {
+                result.Insert(i, word[i]);
+            }
+        }
+    
         return result.ToString();
     }
 }
